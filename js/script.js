@@ -27,7 +27,7 @@ cat.complain();
 // Question 2
 
 const heading = document.querySelector("h3");
-heading.innerHTML = `<h3 styles="font: 2em">Updated Heading</h3>`;
+heading.innerHTML = `Updated Heading`;
 
 // Question 3
 
