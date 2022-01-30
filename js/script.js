@@ -31,3 +31,8 @@ heading.innerHTML = `Updated Heading`;
 
 // Question 3
 
+heading.style.fontSize = "2em;"
+
+// Question 4
+
+heading.className += " subheading";
