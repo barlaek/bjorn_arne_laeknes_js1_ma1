@@ -69,7 +69,30 @@ listLoop(cats);
 // Question 8
 
 function createCats(cats) {
+
+    let catCreation = "";
+
     for(let i = 0; i < cats.length; i++) {
+
+        let catAge = "Age unknown"
         
+        if(cats[i].age) {
+            catAge = cats[i].age;
+        }
+
+        catCreation += `<div>
+                            <h5>Name: ${cats[i].name}</h5>
+                            <p>Age: ${catAge}</p>
+                        </div>
+                            `;
     }
+
+    const finalCats = catCreation;
+
+    return  finalCats;
 }
+
+const catsHtml = createCats(cats);
+
+const catContainer = document.querySelector(".cat-container");
+catContainer.innerHTML = catsHtml;
